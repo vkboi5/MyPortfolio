@@ -1,8 +1,7 @@
 // Smooth scrolling for navigation
 function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({
-        behavior: 'smooth'
-    });
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Form submission placeholder

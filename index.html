@@ -7,24 +7,26 @@
     <title>Vishalkirthik Thirukkonda - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="intro">
-            <h1>Hello, I'm Vishalkirthik Thirukkonda</h1>
+            <h1>Hello, I'm <span class="highlight">Vishalkirthik Thirukkonda</span></h1>
             <p>Web Developer | MERN Enthusiast | Innovator</p>
-            <button onclick="scrollToSection('projects')">Explore My Work</button>
+            <button onclick="scrollToSection('projects')" class="btn">Explore My Work</button>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
         <p>
             I am passionate about building scalable, user-centric applications with a focus on modern web development. 
@@ -32,41 +34,56 @@
             through technology.
         </p>
         <div class="details">
-            <p><strong>Email:</strong> <a href="mailto:vishalkirthiktv@gmail.com">vishalkirthiktv@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vishalkirthik" target="_blank">linkedin.com/in/vishalkirthik</a></p>
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:vishalkirthiktv@gmail.com">vishalkirthiktv@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vishalkirthik" target="_blank">linkedin.com/in/vishalkirthik</a></p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>My Projects</h2>
-        <div class="project">
-            <h3>Healthcare Website</h3>
-            <p>A unified web portal for streamlined patient-doctor interactions using ReactJS, NodeJS, MongoDB, and Express.</p>
-            <a href="https://arogya-connectdemo.vercel.app/homepage" target="_blank">View Demo</a>
-        </div>
-        <div class="project">
-            <h3>Galerie</h3>
-            <p>A blockchain-based online NFT marketplace using ReactJS, NodeJS, Hardhat, Solidity, and MongoDB.</p>
-            <a href="https://github.com/vkboi5/Galerie" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>ASPIRE</h3>
-            <p>A user-centric registration platform for AYUSH startups using ReactJS, NodeJS, REST APIs, MongoDB, and Express.</p>
-            <a href="https://github.com/vkboi5/ASPIRE5" target="_blank">View on GitHub</a>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="img1.png" alt="Healthcare Website" class="project-image">
+                <h3>Healthcare Website</h3>
+                <p>A unified web portal for streamlined patient-doctor interactions using ReactJS, NodeJS, MongoDB, and Express.</p>
+                <a href="https://arogya-connectdemo.vercel.app/homepage" target="_blank" class="btn">View Demo</a>
+            </div>
+            <div class="project">
+                <img src="img2.png" alt="Galerie" class="project-image">
+                <h3>Galerie</h3>
+                <p>A blockchain-based online NFT marketplace using ReactJS, NodeJS, Hardhat, Solidity, and MongoDB.</p>
+                <a href="https://galerie-one.vercel.app/" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project">
+                <img src="img3.png" alt="ASPIRE" class="project-image">
+                <h3>ASPIRE</h3>
+                <p>A user-centric registration platform for AYUSH startups using ReactJS, NodeJS, REST APIs, MongoDB, and Express.</p>
+                <a href="https://aspire-portal.vercel.app/" target="_blank" class="btn">View on GitHub</a>
+            </div>
         </div>
     </section>
+    
 
-    <section id="contact">
+    <section id="contact" class="section contact-section">
         <h2>Contact Me</h2>
-        <div class="contact-form">
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>
+                    Let's get in touch! Whether it's a project, collaboration, or just a friendly conversation,
+                    I'm always open to new opportunities and challenges. Feel free to drop a message.
+                </p>
+            </div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" class="contact-input" required>
+                    <input type="email" placeholder="Your Email" class="contact-input" required>
+                    <textarea placeholder="Your Message" class="contact-textarea" required></textarea>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
+    
 
     <footer>
         <p>&copy; 2024 Vishalkirthik Thirukkonda. All rights reserved.</p>
